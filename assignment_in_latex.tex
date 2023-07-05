@@ -1,0 +1,112 @@
+\documentclass{beamer}
+
+
+\usetheme{Berlin}
+\usecolortheme{default}
+
+
+\title{Introduction to LaTeX and Beamer}
+\author{Mohammed Pelkhier}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{What is LaTeX?}
+  LaTeX is a typesetting system used for the production of documents with high-quality typesetting. It is widely used in academia for scientific papers, reports, and presentations.
+
+  \vspace{0.5cm}
+  
+  LaTeX provides a powerful and consistent framework for document creation, ensuring professional-looking results.
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Why use LaTeX?}
+  \begin{itemize}
+    \item LaTeX produces professional-looking documents with consistent formatting.
+    \item It separates content from presentation, allowing you to focus on the content.
+    \item LaTeX is highly customizable and supports advanced typesetting features.
+    \item It has extensive support for mathematical equations and symbols.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{What is Beamer?}
+  Beamer is a LaTeX package specifically designed for creating presentations. It provides various features like slide transitions, overlays, and animation effects.
+
+  \vspace{0.5cm}
+  
+  With Beamer, you can create professional-looking presentations in LaTeX, maintaining consistency with your other documents.
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Creating Slides with Beamer}
+  \begin{itemize}
+    \item Start by defining the document class as \texttt{beamer}.
+    \item Choose a theme and color scheme for the presentation.
+    \item Use the \texttt{frame} environment to create individual slides.
+    \item Add content and structure to each slide using commands like \texttt{frametitle} and \texttt{itemize}.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Slide Transitions and Effects}
+  Beamer allows you to add slide transitions and effects to your presentation. For example:
+  \begin{itemize}
+    \item Use \texttt{pause} to reveal content step-by-step.
+    \item Add \texttt{<+->} after an itemize/enumerate environment for automatic slide transitions.
+    \item Use commands like \texttt{only}, \texttt{uncover}, and \texttt{alert} for highlighting specific content.
+  \end{itemize}
+
+  \vspace{0.5cm}
+  
+  Let's see some examples on the next slide.
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Examples of Slide Transitions and Effects}
+  \begin{itemize}
+    \item This line will be visible from the beginning.
+    \item This line will appear after the first item.
+    \pause
+    \item This line will appear after the second item.
+    \item This line will appear after the third item.
+  \end{itemize}
+  
+  \vspace{0.5cm}
+  
+  \onslide<4->{This line will appear from the fourth slide onwards.}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Mathematical Equations}
+  LaTeX is renowned for its support for typesetting mathematical equations and symbols. You can use packages like \texttt{amsmath} and \texttt{amssymb} for enhanced mathematical typesetting.
+
+  \vspace{0.5cm}
+
+  Some equation examples:
+  \begin{align*}
+    E &= mc^2 \\
+    \sum_{n=1}^{\infty} \frac{1}{n^2} &= \frac{\pi^2}{6} \\
+    \int_{0}^{1} x^2 \, dx &= \frac{1}{3}
+  \end{align*}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Conclusion}
+  LaTeX, together with the Beamer package, offers a powerful and flexible solution for creating professional presentations. Its ability to separate content from presentation allows you to focus on the substance of your talk while producing visually appealing slides.
+\end{frame}
+
+\end{document}
